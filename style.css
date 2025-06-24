@@ -5,8 +5,9 @@ body {
 
 header {
   display: flex;
-  align-items: center;
-  padding: 10px 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px 40px;
   background-color: white;
   border-bottom: 1px solid #ccc;
 }
@@ -14,52 +15,46 @@ header {
 header img {
   width: 144px;
   height: auto;
+  margin-left: 40px;
 }
-.shop-button {
-  font-family: 'Jost', sans-serif;
-  width: 99px;
-  height: 43px;
-  margin-left: 20px;
-  border-radius: 31.94px;
-  background-color: #55AB25;
-  color: white;
-  font-weight: bold;
-  border: none;
-  box-shadow: 0px 3.19px 3.19px 0px #0000000D;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7.99px;
-  font-size: 14px;
-}
+
 .nav-menu {
   display: flex;
-  gap: 30px;
-  margin-left: 40px;
+  flex: 1;
+  gap: 45px;
+  justify-content: center;
 }
 
 .nav-link {
   font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1;
-  letter-spacing: 2%;
-  color: #000;
   text-decoration: none;
-  height: 25px;
+  color: #000;
   display: flex;
   align-items: center;
+  height: 25px;
+  transition: background-color 0.3s ease;
+  border-radius: 31.94px;
+  padding: 8px 15px; 
 }
+
+.nav-link:hover {
+  background-color: #55AB25;
+  color: white;
+}
+
 .icon-group {
   display: flex;
   gap: 20px;
-  margin-left: auto; 
+  margin-right: 40px; 
+  padding-bottom: 9px;
 }
 
 .icon {
-  font-size: 18px;
+  font-size: 24px;
   cursor: pointer;
+  color:  #55AB25;
 }
 
 
