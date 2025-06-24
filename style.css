@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 header {
@@ -16,7 +16,7 @@ header img {
   height: auto;
 }
 .shop-button {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   width: 99px;
   height: 43px;
   margin-left: 20px;
@@ -51,6 +51,17 @@ header img {
   display: flex;
   align-items: center;
 }
+.icon-group {
+  display: flex;
+  gap: 20px;
+  margin-left: auto; 
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
 
 
 
