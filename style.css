@@ -1,9 +1,11 @@
 body {
   margin: 0;
-  font-family: 'Jost', sans-serif;
+  padding: 0;
+  font-family: "Jost", sans-serif;
 }
 
 header {
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -11,9 +13,8 @@ header {
   background-color: white;
 }
 
-header img {
+header > img:not(.mobile-logo) {
   width: 144px;
-  height: auto;
   margin-left: 40px;
   margin-top: 35px;
 }
@@ -26,39 +27,104 @@ header img {
 }
 
 .nav-link {
-  font-family: 'Jost', sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
   color: #000;
-  display: flex;
   align-items: center;
   height: 25px;
+  padding: 8px 15px;
+  border-radius: 32px;
   transition: background-color 0.3s ease;
-  border-radius: 31.94px;
-  padding: 8px 15px; 
 }
 
 .nav-link:hover {
-  background-color: #55AB25;
+  background-color: #55ab25;
   color: white;
 }
 
 .icon-group {
-    display: flex;
-    cursor: pointer;
-    gap: 16px; 
-    margin-right: 40px;
-    margin-bottom: 7px;
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-bottom: 7px;
 }
 
-.icon-group svg{
+.icon-group svg {
   width: 24px;
   height: 24px;
-  top: -34.28px;
-  stroke: #55AB25;
+  stroke: #55ab25;
 }
 
+.mobile-header,
+.mobile-menu {
+  display: none;
+}
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+.mobile-menu.active {
+  left: 0;
+}
 
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.hamburger svg {
+  width: 28px;
+  height: 28px;
+  stroke: #55ab25;
+}
 
+.mobile-icons {
+  display: flex;
+  gap: 16px;
+  z-index: 2;
+}
+
+.mobile-icons svg {
+  width: 24px;
+  height: 24px;
+  stroke: #55ab25;
+}
+
+@media (max-width: 768px) {
+  .nav-menu,
+  .icon-group,
+  header > img:not(.mobile-logo) {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 2px;
+    width: 100%;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .mobile-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+  }
+}

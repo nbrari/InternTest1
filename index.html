@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Almased Site</title>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almased Site</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="mobile-header">
+        <button id="hamburger" class="hamburger">
+          <i data-lucide="menu"></i>
+        </button>
+        <img
+          src="logo/almased-logo.png"
+          alt="Almased Logo"
+          class="mobile-logo"
+        />
+        <div class="mobile-icons">
+          <i data-lucide="search"></i>
+          <i data-lucide="user-round"></i>
+          <i data-lucide="shopping-cart"></i>
+        </div>
+      </div>
 
-<header>
-  <img src="logo/almased-logo.png" alt="Almased Logo">
+      <img src="logo/almased-logo.png" alt="Almased Logo" />
+      <nav class="nav-menu">
+        <a href="#" class="nav-link">SHOP</a>
+        <a href="#" class="nav-link">About Almased</a>
+        <a href="#" class="nav-link">Science</a>
+        <a href="#" class="nav-link">Results</a>
+        <a href="#" class="nav-link">Health Goals</a>
+        <a href="#" class="nav-link">How to Use</a>
+        <a href="#" class="nav-link">Learn</a>
+      </nav>
+      <div class="icon-group">
+        <i data-lucide="search"></i>
+        <i data-lucide="user-round"></i>
+        <i data-lucide="shopping-cart"></i>
+      </div>
+    </header>
 
-  <nav class="nav-menu">
-    <a href="#" class="nav-link">SHOP</a>
-    <a href="#" class="nav-link">About Almased</a>
-    <a href="#" class="nav-link">Science</a>
-    <a href="#" class="nav-link">Results</a>
-    <a href="#" class="nav-link">Health Goals</a>
-    <a href="#" class="nav-link">How to Use</a>
-    <a href="#" class="nav-link">Learn</a>
-  </nav>
+    <nav id="mobileMenu" class="mobile-menu">
+      <a href="#" class="nav-link">SHOP</a>
+      <a href="#" class="nav-link">About Almased</a>
+      <a href="#" class="nav-link">Science</a>
+      <a href="#" class="nav-link">Results</a>
+      <a href="#" class="nav-link">Health Goals</a>
+      <a href="#" class="nav-link">How to Use</a>
+      <a href="#" class="nav-link">Learn</a>
+    </nav>
 
-  <div class="icon-group">
-    <i data-lucide="search"></i>
-    <i data-lucide="user-round"></i>
-    <i data-lucide="shopping-cart"></i>
-  </div>
-  
-</header>
-
-<script src="./script.js" defer></script>
-</body>
+    <script src="./script.js" defer></script>
+  </body>
 </html>
-
-
