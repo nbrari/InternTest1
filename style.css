@@ -251,6 +251,140 @@ header > img:not(.mobile-logo) {
 .indicator.active {
   background: #fff;
 }
+.goals-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.goal-btn {
+  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+  padding: 1rem;
+  background: #fff;
+  border: 2px solid #55ab25;
+  border-radius: 15px;
+  color: #55ab25;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.goal-plus {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.goal-label {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.goal-btn:hover {
+  background: #55ab25;
+  color: #fff;
+}
+
+.goal-btn.all-goals {
+  background: #f0f0f0;
+  border-color: #ccc;
+  color: #666;
+}
+.goal-btn.all-goals:hover {
+  background: #55ab25;
+  color: #fff;
+  border-color: #55ab25;
+}
+
+.welcome-pack {
+  width: 1303px;
+  height: 675px;
+  margin: 2rem auto;
+  background: #f1e8e6;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.welcome-pack__content {
+  width: 544px;
+  text-align: center;
+  margin-left: 52px;
+}
+
+.welcome-pack__title {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 1;
+  color: #238014;
+  margin-bottom: 1rem;
+}
+
+.welcome-pack__text {
+  width: 425px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  color: #55ab26;
+  margin: 1rem auto 2rem;
+}
+
+.shop-now {
+  display: inline-block;
+  width: 200px;
+  height: 65px;
+  border: none;
+  border-radius: 50px;
+  background: #55ab26;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-pack__shaker {
+  position: absolute;
+  width: 252.55499267578125px;
+  height: 447px;
+  top: 50%;
+  left: 600px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.welcome-pack__can1 {
+  position: absolute;
+  width: 286.85198974609375px;
+  height: 492px;
+  top: 50%;
+  left: 793px;
+  transform: translateY(-38%);
+  z-index: 3;
+}
+
+.welcome-pack__can2 {
+  position: absolute;
+  width: 271.693115234375px;
+  height: 466px;
+  left: 980px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
 @media (max-width: 768px) {
   .nav-menu,
   .icon-group,
