@@ -353,11 +353,13 @@ header > img:not(.mobile-logo) {
   font-size: 1rem;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  position: relative;
 }
 
 .welcome-pack__shaker {
   position: absolute;
-  width: 252.55499267578125px;
+  width: 252px;
   height: 447px;
   top: 50%;
   left: 600px;
@@ -367,7 +369,7 @@ header > img:not(.mobile-logo) {
 
 .welcome-pack__can1 {
   position: absolute;
-  width: 286.85198974609375px;
+  width: 286px;
   height: 492px;
   top: 50%;
   left: 793px;
@@ -377,14 +379,59 @@ header > img:not(.mobile-logo) {
 
 .welcome-pack__can2 {
   position: absolute;
-  width: 271.693115234375px;
+  width: 271px;
   height: 466px;
-  left: 980px;
   top: 50%;
+  left: 980px;
   transform: translateY(-50%);
   z-index: 2;
 }
+.welcome-pack__images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
+.benefits-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  margin: 4rem auto;
+  padding: 2rem;
+  max-width: 1300px;
+}
+
+.benefit {
+  width: 240px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.benefit img {
+  width: 120px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.benefit h3 {
+  font-family: "Miller Display", serif;
+  font-weight: 400;
+  font-size: 21.89px;
+  color: #238014;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.benefit p {
+  font-family: "Jost", sans-serif;
+  font-size: 17.51px;
+  line-height: 21.89px;
+  color: #55ab26;
+}
 @media (max-width: 768px) {
   .nav-menu,
   .icon-group,
@@ -466,5 +513,95 @@ header > img:not(.mobile-logo) {
     min-height: calc(100vh - 56px);
     align-items: flex-start;
     padding-top: 56px;
+  }
+
+  .goals-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .goal-btn {
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome-pack {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+  }
+
+  .welcome-pack__content {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .welcome-pack__title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .welcome-pack__text {
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 1rem auto 2rem;
+  }
+
+  .shop-now {
+    width: 80%;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .welcome-pack__images {
+    position: static;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .welcome-pack__shaker,
+  .welcome-pack__can1,
+  .welcome-pack__can2 {
+    position: static !important;
+    transform: none !important;
+    width: 30%;
+    max-width: 110px;
+    height: auto;
+  }
+
+  .benefits-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .benefit {
+    width: 30%;
+  }
+
+  .benefit img {
+    width: 50px;
+    height: auto;
+  }
+
+  .benefit h3 {
+    font-size: 12px;
+  }
+
+  .benefit p {
+    font-size: 10px;
   }
 }
