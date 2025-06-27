@@ -251,7 +251,6 @@ header > img:not(.mobile-logo) {
 .indicator.active {
   background: #fff;
 }
-
 @media (max-width: 768px) {
   .nav-menu,
   .icon-group,
@@ -275,17 +274,63 @@ header > img:not(.mobile-logo) {
     transform: translateX(-50%);
     width: 110px;
   }
+  .mobile-icons {
+    display: flex;
+    gap: 16px;
+    width: auto;
+    height: auto;
+    z-index: 2;
+  }
+
+  .mobile-icons svg {
+    width: 24px;
+    height: 24px;
+    stroke: #55ab25;
+  }
   .hero-content {
     flex-direction: column;
+    padding: 1rem;
   }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+  }
+
+  .subhead {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
   .stats-row {
     margin: 2rem 0 0 0;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 0.5rem;
   }
+
   .stat-circle {
     width: 130px;
     height: 130px;
     margin: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
+    padding: 0 0.25rem;
+    line-height: 1.1;
+  }
+
+  .cta-btn {
+    position: static;
+    display: block;
+    margin: 1rem auto 0;
+  }
+
+  .hero {
+    min-height: calc(100vh - 56px);
+    align-items: flex-start;
+    padding-top: 56px;
   }
 }
