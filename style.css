@@ -24,6 +24,7 @@ header {
 header > img:not(.mobile-logo) {
   width: 144px;
   align-self: flex-end;
+  margin-left: 50px;
 }
 
 .nav-menu {
@@ -59,6 +60,11 @@ header > img:not(.mobile-logo) {
   cursor: pointer;
   margin-right: 40px;
   margin-bottom: 7px;
+}
+.icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .mobile-icons,
@@ -432,7 +438,7 @@ header > img:not(.mobile-logo) {
   line-height: 21.89px;
   color: #55ab26;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-menu,
   .icon-group,
   header > img:not(.mobile-logo) {
@@ -443,9 +449,10 @@ header > img:not(.mobile-logo) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 2px;
+    padding: 12px 16px;
     width: 100%;
     position: relative;
+    background-color: white;
     z-index: 1001;
   }
 
@@ -453,11 +460,11 @@ header > img:not(.mobile-logo) {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 110px;
+    width: 100px;
   }
   .mobile-icons {
     display: flex;
-    gap: 16px;
+    gap: 3px;
     width: auto;
     height: auto;
     z-index: 2;
@@ -466,7 +473,23 @@ header > img:not(.mobile-logo) {
   .mobile-icons svg {
     width: 24px;
     height: 24px;
-    stroke: #55ab25;
+    display: flex;
+  }
+  .hamburger {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .hamburger-line {
+    width: 24px;
+    height: 3px;
+    background-color: #55ab25;
   }
   .hero-content {
     flex-direction: column;

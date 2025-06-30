@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Almased Site</title>
-    <script src="https://unpkg.com/lucide@latest"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=2" />
   </head>
   <body>
     <header>
       <div class="mobile-header">
-        <button id="hamburger" class="hamburger">
-          <i data-lucide="menu"></i>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
         </button>
         <img
           src="logo/almased-logo.png"
@@ -23,9 +24,9 @@
           class="mobile-logo"
         />
         <div class="mobile-icons">
-          <i data-lucide="search"></i>
-          <i data-lucide="user-round"></i>
-          <i data-lucide="shopping-cart"></i>
+          <img src="logo/search.png" alt="Search Icon" class="icon-img" />
+          <img src="logo/user.png" alt="User Icon" class="icon-img" />
+          <img src="logo/cart.png" alt="Cart Icon" class="icon-img" />
         </div>
       </div>
 
@@ -40,11 +41,12 @@
         <a href="#" class="nav-link">Learn</a>
       </nav>
       <div class="icon-group">
-        <i data-lucide="search"></i>
-        <i data-lucide="user-round"></i>
-        <i data-lucide="shopping-cart"></i>
+        <img src="logo/search.png" alt="Search Icon" class="icon-img" />
+        <img src="logo/user.png" alt="User Icon" class="icon-img" />
+        <img src="logo/cart.png" alt="Cart Icon" class="icon-img" />
       </div>
     </header>
+
     <nav id="mobileMenu" class="mobile-menu">
       <a href="#" class="nav-link">SHOP</a>
       <a href="#" class="nav-link">About Almased</a>
