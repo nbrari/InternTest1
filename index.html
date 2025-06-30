@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Jost&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css?v=2" />
   </head>
   <body>
@@ -181,6 +185,70 @@
       </div>
     </section>
 
-    <script src="./script.js" defer></script>
+    <section class="testimonial-section swiper mySwiper">
+      <div class="testimonial-arrows">
+        <button class="arrow-button swiper-button-prev">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#55ab26"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </button>
+        <button class="arrow-button swiper-button-next">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#55ab26"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimonial-slide">
+          <div class="testimonial-left">
+            <p class="testimonial-quote">
+              “The energy I started to have was unbelievable.”
+            </p>
+            <p class="testimonial-name">— Stephanie S.</p>
+            <button class="testimonial-button">LEARN STEPHANIE’S STORY</button>
+          </div>
+          <div class="testimonial-right">
+            <img src="logo/woman.png" alt="Stephanie" />
+          </div>
+        </div>
+
+        <div class="swiper-slide testimonial-slide">
+          <div class="testimonial-left">
+            <p class="testimonial-quote">
+              “The energy I started to have was unbelievable.”
+            </p>
+            <p class="testimonial-name">— Stephanie S.</p>
+            <button class="testimonial-button">LEARN STEPHANIE’S STORY</button>
+          </div>
+          <div class="testimonial-right">
+            <img src="logo/woman.png" alt="Stephanie Duplicate" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

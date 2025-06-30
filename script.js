@@ -16,3 +16,10 @@ indicators.forEach((indicator, idx) => {
     indicator.classList.add("active");
   });
 });
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
