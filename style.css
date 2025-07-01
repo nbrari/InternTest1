@@ -591,6 +591,228 @@ header > img:not(.mobile-logo) {
   bottom: 15px;
   right: 130px;
 }
+.carousel-section {
+  width: 1528px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #f1e8e6;
+  padding: 80px 60px;
+  box-sizing: border-box;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.carousel-title {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  color: #238014;
+  margin-bottom: 60px;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-card {
+  width: 439px;
+  height: 595px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.card-image {
+  position: relative;
+  height: 400px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plus-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  background-color: #238014;
+  color: white;
+  font-size: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 16px;
+  background-color: #55ab26;
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+  font-size: 30px;
+}
+
+.card-content p {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 16px;
+  right: 60px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+  margin-right: 45px;
+}
+
+.carousel-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #55ab26;
+  background-color: transparent;
+  color: #55ab26;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.carousel-btn:hover,
+.carousel-btn:active {
+  background-color: #238014;
+  color: white;
+  border-color: #238014;
+}
+
+.scroll-track {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+  padding: 0 20px;
+}
+
+.scroll-line {
+  width: 250px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-line.active {
+  background-color: #ffffff;
+}
+.metabolic-leader-section {
+  max-width: 1343px;
+  margin: 100px auto;
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+}
+
+.metabolic-heading {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 1;
+  color: #238014;
+  margin-bottom: 60px;
+}
+
+.metrics-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.metric-card {
+  width: 220px;
+  height: 220px;
+  border: 1px solid #55ab26;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.metric-value {
+  font-size: 50px;
+  font-weight: bold;
+  color: #55ab26;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+}
+
+.metric-caption {
+  font-size: 16px;
+  color: #55ab26;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  line-height: 1.4;
+}
+
+.metabolic-subtext {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.research-button {
+  background-color: #55ab26;
+  color: white;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.research-button:hover {
+  background-color: #238014;
+}
 
 @media (max-width: 1024px) {
   .nav-menu,
