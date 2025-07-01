@@ -475,7 +475,6 @@ header > img:not(.mobile-logo) {
   align-items: center;
   background: #d5e7b9;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .testimonial-slide {
