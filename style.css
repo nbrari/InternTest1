@@ -603,7 +603,7 @@ header > img:not(.mobile-logo) {
 }
 
 .carousel-title {
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 300;
   font-size: 60px;
   line-height: 1;
@@ -680,11 +680,13 @@ header > img:not(.mobile-logo) {
 .card-content h3 {
   margin: 0 0 8px;
   font-size: 30px;
+  font-family: "Jost", sans-serif;
 }
 
 .card-content p {
   font-size: 20px;
   line-height: 1.4;
+  font-family: "Jost", sans-serif;
 }
 
 .carousel-controls {
