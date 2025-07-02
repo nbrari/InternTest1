@@ -815,6 +815,204 @@ header > img:not(.mobile-logo) {
   background-color: #238014;
 }
 
+.university-studies-section {
+  width: 1515px;
+  height: 286px;
+  background: #f9f175;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+}
+
+.university-studies-heading {
+  width: 1335.29px;
+  height: 54px;
+  background: #f9f175;
+  color: #238014;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 2%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.university-studies-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.expert-swiper-section {
+  position: relative;
+  width: 1512px;
+  height: 633px;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1e8e6;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.expert-swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.expert-swiper-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.expert-image {
+  width: 547px;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.expert-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.expert-content {
+  width: 965px;
+  padding: 91px 40px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.expert-quote {
+  font-family: "Miller Display", serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #238014;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+.expert-quote-wrapper {
+  position: relative;
+  padding: 0 40px;
+}
+
+.expert-quote-mark {
+  position: absolute;
+  font-size: 90px;
+  color: #238014;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+}
+
+.expert-open-quote {
+  top: -45px;
+  left: 40px;
+}
+
+.expert-close-quote {
+  bottom: -15px;
+  right: 580px;
+}
+
+.expert-signature {
+  width: 153px;
+  height: 119px;
+  display: block;
+  margin-left: 40px;
+}
+
+.expert-names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expert-name-left {
+  width: 50%;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
+  color: #238014;
+}
+
+.expert-name-right {
+  width: 50%;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  color: #55ab26;
+}
+
+.expert-swiper-arrows {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.expert-swiper-arrows-bottom .expert-arrow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #55ab26;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: all;
+  transition: background 0.2s ease;
+}
+.health-hero-section {
+  width: 1343px;
+  height: 115px;
+  margin: 74px auto 0 auto;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.health-hero-title {
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #238014;
+  margin: 0;
+}
+
 @media (max-width: 1024px) {
   .nav-menu,
   .icon-group,

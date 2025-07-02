@@ -28,7 +28,7 @@ const buttons = document.querySelectorAll(".carousel-controls button");
 const trackLines = document.querySelectorAll(".scroll-line");
 
 const cards = document.querySelectorAll(".carousel-card");
-const cardWidth = cards[0].offsetWidth + 40; 
+const cardWidth = cards[0].offsetWidth + 40;
 const totalCards = cards.length;
 
 let currentIndex = 0;
@@ -59,5 +59,10 @@ container.addEventListener("scroll", () => {
   currentIndex = index;
   updateScrollIndicator();
 });
-
-
+const expertSwiper = new Swiper(".myExpertSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next-expert",
+    prevEl: ".swiper-button-prev-expert",
+  },
+  loop: true,
+});
