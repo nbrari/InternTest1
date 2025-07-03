@@ -748,7 +748,7 @@ header > img:not(.mobile-logo) {
 }
 
 .metabolic-heading {
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 100;
   font-size: 60px;
   line-height: 1;
@@ -780,18 +780,18 @@ header > img:not(.mobile-logo) {
   font-weight: bold;
   color: #55ab26;
   margin-bottom: 10px;
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .metric-caption {
   font-size: 16px;
   color: #55ab26;
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   line-height: 1.4;
 }
 
 .metabolic-subtext {
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   color: #333;
   margin-top: 40px;
@@ -806,7 +806,7 @@ header > img:not(.mobile-logo) {
   padding: 16px 36px;
   border-radius: 10px;
   font-size: 16px;
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -1011,7 +1011,7 @@ header > img:not(.mobile-logo) {
 }
 
 .health-hero-title {
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-size: 60px;
   line-height: 100%;
@@ -1028,7 +1028,7 @@ header > img:not(.mobile-logo) {
 .shake-headline {
   width: 1139px;
   height: 115px;
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-size: 50px;
   line-height: 1;
@@ -1111,7 +1111,7 @@ header > img:not(.mobile-logo) {
 .availability-title {
   width: 905px;
   height: 57px;
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   font-size: 28px;
   line-height: 1;
@@ -1140,7 +1140,7 @@ header > img:not(.mobile-logo) {
   border-radius: 32.25px;
   background-color: #55ab26;
   color: white;
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   border: none;
@@ -1153,6 +1153,82 @@ header > img:not(.mobile-logo) {
   width: 1111px;
   height: 202px;
   object-fit: contain;
+}
+.newsletter-section {
+  width: 100%;
+  max-width: 1511px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #d5e7b9;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-wrapper {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.newsletter-label {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 27.81px;
+  line-height: 1;
+  color: #238014;
+}
+
+.newsletter-heading {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1;
+  color: #238014;
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.newsletter-input {
+  flex: 1;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #55b046;
+  padding: 0 20px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: #238014;
+  background-color: transparent;
+  outline: none;
+}
+.newsletter-input::placeholder {
+  color: #55b046;
+}
+
+.newsletter-button {
+  height: 50px;
+  padding: 0 30px;
+  background-color: #55ab26;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  font-family: "IBM Plex Sans", sans-serif;
+  box-shadow: 0px 4px 4px 0px #0000000d;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 @media (max-width: 1024px) {
@@ -1660,5 +1736,43 @@ header > img:not(.mobile-logo) {
   .award-logos img {
     width: 100%;
     height: auto;
+  }
+  .newsletter-section {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-wrapper {
+    width: 100%;
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  .newsletter-label {
+    font-size: 20px;
+  }
+
+  .newsletter-heading {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .newsletter-button {
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
   }
 }
