@@ -903,11 +903,13 @@ header > img:not(.mobile-logo) {
   font-family: "Miller Display", serif;
   font-weight: 300;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 1.3;
   letter-spacing: 0%;
   color: #238014;
   margin-bottom: 30px;
   margin-left: 40px;
+  display: block;
+  white-space: normal;
 }
 .expert-quote-wrapper {
   position: relative;
@@ -973,14 +975,14 @@ header > img:not(.mobile-logo) {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
+  padding: 0 60px;
   pointer-events: none;
   z-index: 10;
 }
 
 .expert-swiper-arrows-bottom .expert-arrow {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: 2px solid #55ab26;
   border-radius: 50%;
   background: transparent;
@@ -990,6 +992,12 @@ header > img:not(.mobile-logo) {
   cursor: pointer;
   pointer-events: all;
   transition: background 0.2s ease;
+}
+.expert-swiper-arrows-bottom .expert-arrow svg {
+  width: 100%;
+  height: 100%;
+  stroke: #55ab26;
+  stroke-width: 1.5;
 }
 .health-hero-section {
   width: 1343px;
@@ -1011,6 +1019,140 @@ header > img:not(.mobile-logo) {
   text-align: center;
   color: #238014;
   margin: 0;
+}
+.shake-section {
+  background-color: #f1e8e6;
+  padding: 111px 186px 60px;
+}
+
+.shake-headline {
+  width: 1139px;
+  height: 115px;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1;
+  color: #238014;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.shake-card-container {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.shake-card-1,
+.shake-card-2,
+.shake-card-3 {
+  width: 439px;
+  height: 540px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.shake-card-image {
+  position: relative;
+  height: 400px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.shake-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shake-plus-icon {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  background-color: #238014;
+  color: white;
+  font-size: 35px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shake-card-content {
+  padding: 16px;
+  background-color: #55ab26;
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.shake-card-content p {
+  font-size: 25px;
+  line-height: 1.4;
+  font-family: "Jost", sans-serif;
+}
+.availability-section {
+  background-color: white;
+  padding: 81px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.availability-title {
+  width: 905px;
+  height: 57px;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1;
+  color: #238014;
+  margin: 0 auto 40px;
+}
+
+.availability-logos {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 80px 300px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.availability-logos img {
+  max-width: 160px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.store-locator-btn {
+  width: 229px;
+  height: 45px;
+  border-radius: 32.25px;
+  background-color: #55ab26;
+  color: white;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border: none;
+  box-shadow: 0px 3.22px 3.22px 0px #0000000d;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.award-logos img {
+  width: 1111px;
+  height: 202px;
+  object-fit: contain;
 }
 
 @media (max-width: 1024px) {
@@ -1428,5 +1570,95 @@ header > img:not(.mobile-logo) {
     justify-content: center;
     gap: 30px;
     padding: 20px 0;
+  }
+  .shake-section {
+    padding: 2rem 1rem;
+  }
+
+  .shake-headline {
+    font-size: 28px;
+    line-height: 1.2;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .shake-card-container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .shake-card-1,
+  .shake-card-2,
+  .shake-card-3 {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .shake-card-image {
+    height: 220px;
+  }
+
+  .shake-card-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .shake-plus-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    border-radius: 6px;
+  }
+
+  .shake-card-content {
+    padding: 16px;
+  }
+
+  .shake-card-content p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .availability-section {
+    padding: 2rem 1rem;
+  }
+
+  .availability-title {
+    font-size: 22px;
+    line-height: 1.2;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .availability-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    justify-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .availability-logos img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .store-locator-btn {
+    width: 80%;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 32.25px;
+    margin: 0 auto 2rem;
+  }
+
+  .award-logos img {
+    width: 100%;
+    height: auto;
   }
 }
