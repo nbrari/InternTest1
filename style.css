@@ -1056,6 +1056,10 @@ header > img:not(.mobile-logo) {
   overflow: hidden;
 }
 
+.shake-card-3 .shake-card-content p {
+  text-align: center;
+}
+
 .shake-card-image {
   position: relative;
   height: 400px;
