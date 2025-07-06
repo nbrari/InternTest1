@@ -928,12 +928,12 @@ header > img:not(.mobile-logo) {
 
 .expert-open-quote {
   top: -45px;
-  left: 40px;
+  left: 45px;
 }
 
 .expert-close-quote {
-  bottom: -15px;
-  right: 580px;
+  bottom: -5px;
+  right: 285px;
 }
 
 .expert-signature {
