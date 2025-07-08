@@ -1388,7 +1388,7 @@ header > img:not(.mobile-logo) {
   .cta-btn {
     position: static;
     display: block;
-    margin: 1rem auto 0;
+    margin: 0.5rem;
   }
 
   .hero {
@@ -1498,13 +1498,19 @@ header > img:not(.mobile-logo) {
   .testimonial-slide {
     flex-direction: column;
     height: auto;
+    display: flex;
+    align-items: center;
   }
 
-  .testimonial-left {
+  .testimonial-left,
+  .testimonial-right {
     width: 100%;
     padding: 20px;
-    align-items: center;
+    box-sizing: border-box;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .testimonial-quote-wrapper {
@@ -1513,7 +1519,18 @@ header > img:not(.mobile-logo) {
 
   .testimonial-quote {
     font-size: 32px;
-    line-height: 1.2;
+    line-height: 1.4;
+    quotes: none;
+    display: inline-block;
+    text-align: center;
+    word-break: break-word;
+    white-space: normal;
+    position: relative;
+  }
+
+  .testimonial-quote::before,
+  .testimonial-quote::after {
+    content: none !important;
   }
 
   .testimonial-name {
@@ -1657,7 +1674,9 @@ header > img:not(.mobile-logo) {
   }
 
   .expert-image img {
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
   }
 
   .expert-content {
